@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main() {
+    int bs,hra,da,ta,gross ;
+    
+    printf("enter Base Salary:");
+    scanf("%d",&bs);
+    
+    printf("enter hra:");
+    scanf("%d",&hra);
+    
+    printf("enter da:");
+    scanf("%d",&da);
+    
+    printf("enter ta:");
+    scanf("%d",&ta);
+    
+    gross=bs+(bs*hra/100)+(bs*da/100)+((bs*ta/100));
+    
+    printf("gross salary is %d",gross);
+
+    return 0;
+}
