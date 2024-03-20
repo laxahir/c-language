@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    int x,y,ans;
+    
+    printf("enter two value:");
+    scanf("%d %d",&x,&y);
+    
+    ans=(x+y)*(x+y)*(x+y);
+    
+     printf("answer :%d",ans);
+ 
+    return 0;
+}
