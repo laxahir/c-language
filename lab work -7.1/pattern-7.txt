@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+       char i='A',j='B';
+       
+       for(i='A';i<='E';i++){
+           for(j='E';j>='A';j--){
+               if(i>=j){
+                   printf("%c ",j);
+               }
+           }
+           printf("\n");
+       }
+
+    return 0;
+}
