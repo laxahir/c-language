@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int no,sum=0,last,l;
+    
+    printf("enter any number:");
+    scanf("%d",&no);
+    last = no%10;
+    while(no>0){
+        l = no%10;
+        no = no/10;
+    }
+    sum=last+l;
+    printf("\n first and last number sum is: %d",sum);
+
+    return 0;
+}

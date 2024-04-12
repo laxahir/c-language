@@ -1,0 +1,18 @@
+// fibonaki searies.
+
+#include <stdio.h>
+
+int main() {
+        int n,first=0,second=1,i,t;
+        printf("enter any number:");
+        scanf("%d",&n);
+       
+    for(i=1;i<=n;i++){
+        printf("%d ",first);
+        t=first+second;
+        first=second;
+        second=t;
+    }
+
+    return 0;
+}

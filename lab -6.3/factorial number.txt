@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    int no,mult=1,i;
+    
+    printf("enter any number:");
+    scanf("%d",&no);
+    
+    for(i=1; i<=no; i++){
+        mult=mult*i;
+    }
+    printf("factorial is:%d",mult);
+
+    return 0;
+}
