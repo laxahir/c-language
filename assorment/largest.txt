@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    int a[100][100],row,col,i,j,larg=a[0][0];
+    
+    
+    printf("Enter row:");
+    scanf("%d",&row);
+    printf("Enter collumn:");
+    scanf("%d",&col);
+    
+    printf("enter arrays element:");
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+    for(i=0;i<row;i++){
+        for(j=0;j<col;j++){
+            if(a[i][j]>larg){
+            larg = a[i][j];
+            }
+        }
+    }
+    printf("largest no is:%d",larg);
+    
+        
+    
+
+    return 0;
+}

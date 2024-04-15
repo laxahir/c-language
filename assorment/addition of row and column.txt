@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+int main() {
+    int a[100][100], transpose[100][100], size, rows, cols, i, j, row_sum = 0, col_sum = 0;
+    
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+    printf("Enter number of columns: ");
+    scanf("%d", &cols);
+    
+    printf("Enter array elements:\n");
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < cols; j++) {
+            scanf("%d", &a[i][j]);
+        }
+    }
+    
+    printf("Transpose of the matrix:\n");
+    for (i = 0; i < cols; i++) {
+        for (j = 0; j < rows; j++) {
+            transpose[i][j] = a[j][i];
+            printf("%d ", transpose[i][j]);
+        }
+        printf("\n");
+    }
+    
+    printf("Enter row number: ");
+    scanf("%d", &size);
+    
+    printf("Row elements:\n");
+    for (j = 0; j < cols; j++) {
+        printf("%d ", a[size][j]);
+        row_sum += a[size][j];
+    }
+    
+    printf("\n\nSum of row %d: %d\n", size, row_sum);
+    
+    printf("Enter column number: ");
+    scanf("%d", &size); 
+    printf("Column elements:\n");
+    for (i = 0; i < rows; i++) {
+        printf("%d ", a[i][size]);
+        col_sum += a[i][size];
+    }
+    
+    printf("\n\nSum of column %d: %d\n", size, col_sum);
+    
+    return 0;
+}

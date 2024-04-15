@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+int main() {
+    int a[100][100],size,i,j,transpose[100][100];
+    
+    
+    printf("Enter row:");
+    scanf("%d",&size);
+    
+    
+    printf("enter arrays element:");
+    for(i=0;i<size;i++){
+        for(j=0;j<size;j++){
+            scanf("%d",&a[i][j]);
+        }
+    }
+    
+     for(i=0;i<size;i++){
+        for(j=0;j<size;j++){
+           transpose[j][i] = a[i][j];
+        }
+    }
+    
+    printf("transpose metrix is:\n");
+    for(i=0;i<size;i++){
+        for(j=0;j<size;j++){
+            printf("%d ",transpose[i][j]);
+        }
+        printf("\n");
+    }
+    
+    
+        
+    
+
+    return 0;
+}
