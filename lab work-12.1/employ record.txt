@@ -1,0 +1,47 @@
+#include <stdio.h>
+
+struct Employee {
+    int emp_id;
+    char emp_name[100];
+    int emp_age;
+    char emp_role[100];
+    char emp_city[100];
+    int emp_experience;
+    char emp_company_name[100];
+} s[100];
+
+int main() {
+    int i, n;
+
+    printf("Enter number of objects:");
+    scanf("%d", &n);
+
+    for (i = 0; i < n; i++) {
+        printf("ID: ");
+        scanf("%d", &s[i].emp_id);
+        printf("Enter name: ");
+        scanf("%s", s[i].emp_name);
+        printf("Age: ");
+        scanf("%d", &s[i].emp_age);
+        printf("Enter role: ");
+        scanf("%s", s[i].emp_role);
+        printf("Enter city: ");
+        scanf("%s", s[i].emp_city);
+        printf("Enter experience: ");
+        scanf("%d", &s[i].emp_experience);
+        printf("Enter company name: ");
+        scanf("%s", s[i].emp_company_name);
+    }
+
+    for (i = 0; i < n; i++) {
+        printf("\nID: %d\n", s[i].emp_id);
+        printf("Name: %s\n", s[i].emp_name);
+        printf("Age: %d\n", s[i].emp_age);
+        printf("Role: %s\n", s[i].emp_role);
+        printf("City: %s\n", s[i].emp_city);
+        printf("Experience: %d\n", s[i].emp_experience);
+        printf("Company name: %s\n", s[i].emp_company_name);   
+    }
+
+    return 0;
+}

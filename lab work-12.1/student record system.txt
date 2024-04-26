@@ -1,0 +1,53 @@
+#include <stdio.h>
+#include <string.h>
+
+struct students{
+  int stu_id;
+  char stu_name[100];
+  int stu_age;
+  char stu_course[100];
+  char stu_city[100];
+  int stu_standard;
+  char stu_school[100];
+}s;
+
+int main() {
+    int i;
+    
+       s.stu_id=1;
+       strcpy(s.stu_name,"lax");
+       s.stu_age=18;
+       strcpy(s.stu_course,"front-end");
+       strcpy(s.stu_city,"ahmedabad");
+       s.stu_standard=12;
+       strcpy(s.stu_school,"r&w\n");
+       
+       s.stu_id=2;
+       strcpy(s.stu_name,"om");
+       s.stu_age=18;
+       strcpy(s.stu_course,"front-end");
+       strcpy(s.stu_city,"kadi");
+       s.stu_standard=12;
+       strcpy(s.stu_school,"r&w\n");
+       
+       s.stu_id=3;
+       strcpy(s.stu_name,"karan");
+       s.stu_age=120;
+       strcpy(s.stu_course,"front-end");
+       strcpy(s.stu_city,"gandhinagar");
+       s.stu_standard=10;
+       strcpy(s.stu_school,"r&w\n");
+       
+    
+   for(i=0;i<3;i++){
+   printf("id: %d\n",s.stu_id);
+   printf("name: %s\n",s.stu_name);
+   printf("age: %d\n",s.stu_age);
+   printf("course: %s\n",s.stu_course);
+   printf("city: %s\n",s.stu_city);
+   printf("standard: %d\n",s.stu_standard);
+   printf("school: %s\n",s.stu_school);
+   };
+
+    return 0;
+}
