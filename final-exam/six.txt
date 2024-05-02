@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include<string.h>
+
+struct students{
+  char name[100];
+  char course[100];
+  int year;
+  int id;
+}l;
+
+int main() {
+      int i;
+      
+      l.id=1;
+      strcpy(l.name,"lax");
+      strcpy(l.course,"full-stack");
+      l.year=18; 
+      
+      l.id=2;
+      strcpy(l.name,"karan");
+      strcpy(l.course,"font-end");
+      l.year=20;
+      
+      l.id=3;
+      strcpy(l.name,"om");
+      strcpy(l.course,"back-end");
+      l.year=25;
+    
+  
+      for(i=0;i<3;i++){
+          printf("\nid:%d",l.id);
+          printf("\nstudent name:%s",l.name);
+          printf("\nstudent course:%s",l.course);
+          printf("\nyear:%d\n",l.year);
+      }
+
+    return 0;
+}

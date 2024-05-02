@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+   int size,i,arr[size];
+   
+   printf("enter array size:");
+   scanf("%d",&size);
+ 
+   printf("enter array elements");
+   for(i=0;i<size;i++){
+       printf("a[%d]",i);
+       scanf("%d",&arr[i]);
+   }
+   
+   
+   int squarearray(int *arr,int size){
+       int i;
+       printf("square of element:");
+       for(i=0;i<size;i++){
+           printf("%d,",( * (arr+i))*(*(arr+i)));
+       }
+   }
+   squarearray(arr,size);
+    return 0;
+}

@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct cars{
+  char car_model[100];
+  int car_price;
+  int car_year;
+}l[100];
+
+int main() {
+      int i,n;
+      
+      printf("Enter number of cars:");
+      scanf("%d",&n);
+      
+      for(i=0;i<n;i++){
+          printf("\nEnter car model:");
+          scanf("%s", &l[i].car_model);
+           printf("Enter car price:");
+          scanf("%d",&l[i].car_price);
+          printf("Enter year:");
+          scanf("%d",&l[i].car_year);
+      }
+      
+      printf("\n---car detail is---\n");
+      
+      for(i=0;i<n;i++){
+          printf("\ncar_model:%s",l[i].car_model);
+          printf("\ncar_price:%d",l[i].car_price);
+          printf("\ncar_year:%d\n",l[i].car_year);
+      }
+
+    return 0;
+}
